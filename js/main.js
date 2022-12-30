@@ -1,4 +1,3 @@
-console.log("cvbbcv");
 // user_geolocation();
 var elem = document.getElementById('form_received');
 elem.style.display = 'none';
