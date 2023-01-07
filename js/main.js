@@ -12,7 +12,7 @@ async function submitOrder() {
 
     console.log(userName, cellphone, company, email);
     // NOW PUSH THE DATA TO DATABASE AND NOTIFY USER
-    BASE_URL = "https://vec4ziu7mc.execute-api.us-west-2.amazonaws.com/dev/api-traceai/trace_ai_post/"
+    BASE_URL = "https://3za3d4wrgi.execute-api.us-east-2.amazonaws.com/dev/api-traceai/trace_ai_post/"
     let payload = {
         name: userName,
         cellphone: cellphone,
@@ -40,7 +40,7 @@ async function submitOrder() {
 
 function user_geolocation() {
     let apiKey = 'bdc_ca918fe3bff4410fa17b5d1efe4c5208';
-    user_action_url = 'https://vec4ziu7mc.execute-api.us-west-2.amazonaws.com/dev/api-analytics/AnalyticsList/';
+    user_action_url = 'https://3za3d4wrgi.execute-api.us-east-2.amazonaws.com/dev/api-analytics/AnalyticsList/';
 
     params = {
         key: apiKey
@@ -63,3 +63,5 @@ async function updateUserAction(resp) {
     console.log(res);
 
 }
+
+
