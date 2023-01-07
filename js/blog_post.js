@@ -1,4 +1,4 @@
-// user_geolocation();
+user_geolocation();
 
 
 function user_geolocation() {
@@ -18,7 +18,7 @@ function user_geolocation() {
 async function updateUserAction(resp) {
 
     let payload = {
-        page_visited: "traceAI",
+        page_visited: "traceAI-blogpost",
         user_action: resp.data.ip + "-" + resp.data.location.city + "-" + resp.data.location.localityName,
     };
 
