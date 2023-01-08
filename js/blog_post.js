@@ -1,4 +1,4 @@
-user_geolocation();
+// user_geolocation();
 
 
 function user_geolocation() {
@@ -41,12 +41,6 @@ function getPostDetail() {
         code_block = []
         document.getElementById("heading").innerHTML = response.data.title
         document.getElementById("content").innerHTML = response.data.content
-
-        // code_block = []
-        // var code_block = code_block +
-        // `<img src="${response.data.file}" class="img-fluid rounded-start" alt="...">`
-        // // Inserting the code block to wrapper element
-        // document.getElementById("blog_image").innerHTML = code_block
     });
 
 }
@@ -60,3 +54,33 @@ function navigatePosts(post_id)
    window.location = 'blog_post.html?post_id='+post_id;
 }
 
+
+async function submitNewsletter() {
+    console.log("subscribe to newsletter");
+    // USER PERSONAL DETAILS
+    userName = document.getElementById("userName").value;
+    email = document.getElementById("email").value;
+
+    // NOW PUSH THE DATA TO DATABASE AND NOTIFY USER
+    BASE_URL = "https://3za3d4wrgi.execute-api.us-east-2.amazonaws.com/dev/api-traceai/trace_ai_post/"
+    let payload = {
+        name: userName,
+        cellphone: "-",
+        email: email,
+        company: "sign up to newsletter",
+    };
+
+    let res = await axios.post(BASE_URL, payload);
+    console.log(res.status);
+
+    // if (res.status == 201) {
+    //     var form_elem = document.getElementById('order_form1');
+    //     var intro_stuff = document.getElementById('intro_stuff');
+    //     form_elem.style.display = 'none'
+    //     intro_stuff.style.display = 'none'
+    //     elem.style.display = 'block';
+    // } else {
+    //     alert("invalid form data")
+    // }
+
+}

@@ -446,6 +446,16 @@ footer {
     background-repeat: no-repeat;
 }
 
+.signup {
+    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), #082032;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-top: 40px;
+}
+
 footer .footer-top {
     padding-top: 80px;
     padding-bottom: 40px;

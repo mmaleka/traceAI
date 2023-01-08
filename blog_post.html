@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139393267-1"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -49,7 +52,7 @@
     </section> -->
 
     <!-- HEADER -->
-    <section id="header">
+    <section id="header" class="">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
@@ -57,10 +60,77 @@
                 </div>
             </div>
             <div class="row justify-content-center" id="detail_post">
-                <div class="col-md-8 col-12">
+                <div class="col-md-8 col-lg-8 col-sm-12 col-12">
                     <p id="content"></p>
                 </div>
             </div>
+
+            <div class="signup">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-8 col-sm-12 col-12">
+                        <div class="intro" id="intro_stuff">
+                            <h6>Sign up to our weekly newsletter</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-8 col-sm-12 col-12">
+                        <form id="order_form1" class="p-lg-5 col-12 row g-3" onsubmit="return false">
+                            <div class="col-md-5 col-5">
+                                <label for="userName" class="form-label">Name</label>
+                                <input type="text" class="form-control border border-info" placeholder="" id="userName"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="col-md-5 col-5">
+                                <label for="userName" class="form-label">Email</label>
+                                <input type="email" class="form-control border border-info" placeholder="" id="email"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="col-md-2 col-2">
+                                <label for="userName" class="form-label">.</label>
+                                <button class="btn btn-brand" onclick="submitNewsletter()">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center" id="detail_post">
+                <div class="col-md-8 col-lg-8 col-sm-12 col-12">
+                    <p id="content2"></p>
+                </div>
+            </div>
+
+            <div class="signup">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-8 col-sm-12 col-12">
+                        <div class="intro" id="intro_stuff">
+                            <h6>Sign up to our weekly newsletter</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-8 col-sm-12 col-12">
+                        <form id="order_form1" class="p-lg-5 col-12 row g-3" onsubmit="return false">
+                            <div class="col-md-5 col-5">
+                                <label for="userName" class="form-label">Name</label>
+                                <input type="text" class="form-control border border-info" placeholder="" id="userName"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="col-md-5 col-5">
+                                <label for="userName" class="form-label">Email</label>
+                                <input type="email" class="form-control border border-info" placeholder="" id="email"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="col-md-2 col-2">
+                                <label for="userName" class="form-label">.</label>
+                                <button class="btn btn-brand" onclick="submitNewsletter()">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
