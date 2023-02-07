@@ -23,7 +23,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
 
-    <title>traceAI: Blog</title>
+    <title>manTraceability: Blog</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
@@ -32,7 +32,7 @@
     <!-- BOTTOM NAV -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="blog.html">traceAI<span class="dot">.</span></a>
+            <a class="navbar-brand" href="blog.html">manTraceability<span class="dot">.</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
                         <a class="nav-link" href="blog.html">Posts</a>
                     </li>
                 </ul>
-                <a href="index.html" class="btn btn-brand ms-lg-3">About</a>
+                <a href="index.html" class="btn btn-brand ms-lg-3">Product</a>
             </div>
         </div>
     </nav>
@@ -63,11 +63,29 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <h1 id="heading">TraceAI Insights:</h1>
+                    <h1 id="heading">manTraceability Insights:</h1>
                 </div>
             </div>
             <div class="row justify-content-center" id="detail_post">
                 <div class="col-md-8 col-lg-8 col-sm-12 col-12">
+                    
+                    <div class="modal" tabindex="-1">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Modal title</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     <p id="content"></p>
                 </div>
             </div>
@@ -119,19 +137,19 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8 col-sm-12 col-12">
                         <form id="order_form1" class="p-lg-5 col-12 row g-3" onsubmit="return false">
-                            <div class="col-md-5 col-5">
+                            <div class="col-6 col-md-5 col-5">
                                 <label for="userName" class="form-label">Name</label>
                                 <input type="text" class="form-control border border-info" placeholder="" id="userName"
                                     aria-describedby="emailHelp" required>
                             </div>
-                            <div class="col-md-5 col-5">
+                            <div class="col-6 col-md-5 col-5">
                                 <label for="userName" class="form-label">Email</label>
                                 <input type="email" class="form-control border border-info" placeholder="" id="email"
                                     aria-describedby="emailHelp" required>
                             </div>
-                            <div class="col-md-2 col-2">
+                            <div class="col-12 col-md-2 col-2">
                                 <label for="userName" class="form-label">.</label>
-                                <button class="btn btn-brand" onclick="submitNewsletter()">Submit</button>
+                                <button class="btn btn-brand btn-block" onclick="submitNewsletter()">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -147,8 +165,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
-                        <h4 class="navbar-brand">traceAI<span class="dot">.</span></h4>
-                        <p>TraceAI is a leading provider of traceability solutions for manufacturing. Our innovative 
+                        <h4 class="navbar-brand">manTraceability<span class="dot">.</span></h4>
+                        <p>manTraceability is a leading provider of traceability solutions for manufacturing. Our innovative 
                             technology helps companies improve traceability, maintenance, and quality control. Want to 
                             learn more? Contact us today to schedule a demo or get a quote.</p>
                         <div class="col-auto social-icons">

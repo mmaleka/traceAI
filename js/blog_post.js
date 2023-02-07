@@ -14,6 +14,12 @@ function user_geolocation() {
 }
 
 
+setTimeout(function() {
+    $('#myModal').modal();
+}, 2000);
+
+
+
 
 async function updateUserAction(resp) {
 
